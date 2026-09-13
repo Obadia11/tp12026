@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Page Catalogue</title>
+  </head>
+
+  <body>
+    <header class="header-catalogue">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="">FOULEE</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">Hommes</a></li>
+            <li><a href="">Femmes</a></li>
+            <li><a href="">Enfants</a></li>
+            <li><a href="">Sport</a></li>
+            <li><a href="">Personnaliser</a></li>
+            <li><a href="">Foulée+</a></li>
+          </ul>
+          <form>
+            <label class="sr-only" for="recherche">Rechercher</label>
+            <input
+              type="text"
+              id="recherche"
+              name="recherche"
+              placeholder="rechercher"
+            />
+            <input type="submit" aria-label="rechercher" value="" />
+          </form>
+          <!--Faire un formulaire form(c'est un formulaire)-->
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="header">
+        <div class="wrapper">
+          <nav>
+            <ol>
+              <li class="itemslist">
+                <a href="" class="class">
+                  <span class="name">Accueil</span>
+                </a>
+              </li>
+              <li class="itemslist">
+                <a href="" class="class">
+                  &gt;
+                  <span class="name">Chaussures</span>
+                </a>
+              </li>
+            </ol>
+          </nav>
+          <h1>CHAUSSURES</h1>
+          <p>12 produits</p>
+          <ul>
+            <li>
+              <!--button class="class"><span>TOUS</span></!--button-->
+              <form>
+                <button type="submit" name="categorie" value="tous">
+                  Tous
+                </button>
+                <button type="submit" name="categorie" value="hommes">
+                  HOMMES
+                </button>
+                <button type="submit" name="categorie" value="femmes">
+                  FEMMES
+                </button>
+                <button type="submit" name="categorie" value="enfants">
+                  ENFANTS
+                </button>
+              </form>
+              <!--button(submit) name="categorie" value="tous" (mais c'est encore un formulaire form)-->
+            </li>
+            <!--<li>
+              <button class="class"><span>HOMMES</span></button>
+            </li>-->
+            <!--<li>
+              <button class="class"><span>FEMMES</span></button>
+            </li>-->
+            <!--<li>
+              <button class="class"><span>ENFANTS</span></button>
+            </li>-->
+          </ul>
+          <div class="filter">
+            <nav class="filter">
+              <button><span>Masquer les filtres</span></button>
+            </nav>
+          </div>
+          <div>
+            <form>
+              <label for="nouveautes">Trier par&nbsp;:</label>
+
+              <select name="nouveautes" id="nouveautes">
+                <option value="">Nouveautés</option>
+                <option value="prix">Prix</option>
+                <option value="az">A-Z</option>
+                <option value="populaire">Populaire</option>
+              </select>
+            </form>
+
+            <!--Faire un formulaire form(c'est un formulaire)-->
+          </div>
+        </div>
+      </section>
+
+      <section class="chaussures">
+        <div class="aside">
+          <div class="wrapper-aside">
+            <nav class="aside-filter">
+              <div class="filters">
+                <div class="filter-sport">
+                  <form>
+                    <p>Sport</p>
+                    <ul>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="course"
+                          name="sport"
+                          value="course"
+                        />
+                        <label for="course">Course</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="basketball"
+                          name="sport"
+                          value="basketball"
+                        />
+                        <label for="basketball">Basketball</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="football"
+                          name="sport"
+                          value="football"
+                        />
+                        <label for="football">Football</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="training"
+                          name="sport"
+                          value="training"
+                        />
+                        <label for="training">Training</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="lifestyle"
+                          name="sport"
+                          value="lifestyle"
+                        />
+                        <label for="lifestyle">Lifestyle</label>
+                      </li>
+                    </ul>
+
+                    <p>Prix</p>
+                    <ul>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="moinsde80$"
+                          name="prix"
+                          value="moinsde80$"
+                        />
+                        <label for="moinsde80$">Moins de 80$</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="80$-120$"
+                          name="prix"
+                          value="80$-120$"
+                        />
+                        <label for="80$-120$">80$-120$</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="120$-180$"
+                          name="prix"
+                          value="120$-180$"
+                        />
+                        <label for="120$-180$">120$-180$</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="plusde180$"
+                          name="prix"
+                          value="plusde180$"
+                        />
+                        <label for="plusde180$">Plus de 180$</label>
+                      </li>
+                    </ul>
+                    <p>Couleur</p>
+                    <ul>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="blanc"
+                          name="couleur"
+                          value="blanc"
+                        />
+                        <label for="blanc">Blanc</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="noir"
+                          name="couleur"
+                          value="noir"
+                        />
+                        <label for="noir">Noir</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="rouge"
+                          name="couleur"
+                          value="rouge"
+                        />
+                        <label for="rouge">Rouge</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="bleu"
+                          name="couleur"
+                          value="bleu"
+                        />
+                        <label for="bleu">Bleu</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="jaune"
+                          name="couleur"
+                          value="jaune"
+                        />
+                        <label for="jaune">Jaune</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="gris"
+                          name="couleur"
+                          value="gris"
+                        />
+                        <label for="gris">Gris</label>
+                      </li>
+                    </ul>
+
+                    <p>Pointure</p>
+                    <ul>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="36"
+                          name="pointure"
+                          value="36"
+                        />
+                        <label for="36">36</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="37"
+                          name="pointure"
+                          value="37"
+                        />
+                        <label for="37">37</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="38"
+                          name="pointure"
+                          value="38"
+                        />
+                        <label for="38">38</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="39"
+                          name="pointure"
+                          value="39"
+                        />
+                        <label for="39">39</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="40"
+                          name="pointure"
+                          value="40"
+                        />
+                        <label for="40">40</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="41"
+                          name="pointure"
+                          value="41"
+                        />
+                        <label for="41">41</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="42"
+                          name="pointure"
+                          value="42"
+                        />
+                        <label for="42">42</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="43"
+                          name="pointure"
+                          value="43"
+                        />
+                        <label for="43">43</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="44"
+                          name="pointure"
+                          value="44"
+                        />
+                        <label for="44">44</label>
+                      </li>
+                      <li>
+                        <input
+                          type="checkbox"
+                          id="45"
+                          name="pointure"
+                          value="45"
+                        />
+                        <label for="45">45</label>
+                      </li>
+                    </ul>
+                  </form>
+                  <!--ul li sports ul li ul li(en gros la même chose se répète)-->
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <div class="grid-chaussures">
+          <div class="produit-chaussure">
+            <ul>
+              <li class="card">
+                <p><span>Nouveau</span></p>
+                <!--c'est pas un button c'est comme un flag. ça peut être un p-->
+                <a href="" class="card-produit">
+                  <div class="image-produit">
+                    <!--les images sont men09898i9-->
+                    <img
+                      src="images/Chaussures/men/AirForceFlynit/AirForceFlynit_0100010121_w1124.jpg"
+                      srcset="
+                        images/Chaussures/men/AirForceFlynit/AirForceFlynit_0100010121_w235.jpg 1000w,
+                        images/Chaussures/men/AirForceFlynit/AirForceFlynit_0100010121_w340.jpg  400w,
+                        images/Chaussures/men/AirForceFlynit/AirForceFlynit_0100010121_w470.jpg 1200w,
+                        images/Chaussures/men/AirForceFlynit/AirForceFlynit_0100010121_w680.jpg  720w
+                      "
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="card-content">
+                  <p class="genre">HOMMES</p>
+                  <div class="produit-info">
+                    <h2>AIR FORCE FLYNIT</h2>
+                    <p class="subtitle">3 couleurs</p>
+                  </div>
+                  <p class="produit-prix">$129,99</p>
+                </div>
+                <button class="panier"><span>Ajouter au panier</span></button>
+              </li>
+
+              <li class="card">
+                <a href="" class="card-produit">
+                  <div class="image-produit">
+                    <img
+                      src="images/Chaussures/women/AirForceMidLeather/AirForceMidLeather_010065_w1124.jpg"
+                      srcset="
+                        images/Chaussures/women/AirForceMidLeather/AirForceMidLeather_010065_w235.jpg 1000w,
+                        images/Chaussures/women/AirForceMidLeather/AirForceMidLeather_010065_w340.jpg  400w,
+                        images/Chaussures/women/AirForceMidLeather/AirForceMidLeather_010065_w470.jpg 1200w,
+                        images/Chaussures/women/AirForceMidLeather/AirForceMidLeather_010065_w680.jpg  720w
+                      "
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="card-content">
+                  <div class="genre">FEMMES</div>
+                  <div class="produit-info">
+                    <div class="title">AIR FORCEMID LEATHER</div>
+                    <div class="subtitle">4 couleurs</div>
+                  </div>
+                  <div class="produit-prix">$109,99</div>
+                </div>
+                <button class="panier"><span>Ajouter au panier</span></button>
+              </li>
+
+              <li class="card">
+                <a href="" class="card-produit">
+                  <div class="image-produit">
+                    <img
+                      src="images/Chaussures/men/AirJordanRetroDecon/AirJordanRetroDecon_0100170137_w1124.jpg"
+                      srcset="
+                        images/Chaussures/men/AirJordanRetroDecon/AirJordanRetroDecon_0100170137_w235.jpg 1000w,
+                        images/Chaussures/men/AirJordanRetroDecon/AirJordanRetroDecon_0100170137_w340.jpg  400w,
+                        images/Chaussures/men/AirJordanRetroDecon/AirJordanRetroDecon_0100170137_w470.jpg 1200w,
+                        images/Chaussures/men/AirJordanRetroDecon/AirJordanRetroDecon_0100170137_w680.jpg  720w
+                      "
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="card-content">
+                  <div class="genre">HOMMES</div>
+                  <div class="produit-info">
+                    <div class="title">AIR JORDAN RETRO DECON</div>
+                    <div class="subtitle">5 couleurs</div>
+                  </div>
+                  <div class="produit-prix">$189,99</div>
+                </div>
+                <button class="panier"><span>Ajouter au panier</span></button>
+              </li>
+
+              <li class="card">
+                <a href="" class="card-produit">
+                  <div class="image-produit">
+                    <img
+                      src="images/Chaussures/men/AirVortex/AirVortex0100290149_w1124.jpg"
+                      srcset="
+                        images/Chaussures/men/AirVortex/AirVortex0100290149_w235.jpg 1000w,
+                        images/Chaussures/men/AirVortex/AirVortex0100290149_w340.jpg  400w,
+                        images/Chaussures/men/AirVortex/AirVortex0100290149_w470.jpg 1200w,
+                        images/Chaussures/men/AirVortex/AirVortex0100290149_w680.jpg  720w
+                      "
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="card-content">
+                  <div class="genre">HOMMES</div>
+                  <div class="produit-info">
+                    <div class="title">AIR VORTEX</div>
+                    <div class="subtitle">3 couleurs</div>
+                  </div>
+                  <div class="produit-prix">$99,99</div>
+                </div>
+                <button class="panier"><span>Ajouter au panier</span></button>
+              </li>
+
+              <li class="card">
+                <a href="" class="card-produit">
+                  <div class="image-produit">
+                    <img
+                      src="images/Chaussures/men/CourtBoroughMid/CourtBoroughMid_0100490169_w1124.jpg"
+                      srcset="
+                        images/Chaussures/men/CourtBoroughMid/CourtBoroughMid_0100490169_w235.jpg 1000w,
+                        images/Chaussures/men/CourtBoroughMid/CourtBoroughMid_0100490169_w340.jpg  400w,
+                        images/Chaussures/men/CourtBoroughMid/CourtBoroughMid_0100490169_w470.jpg 1200w,
+                        images/Chaussures/men/CourtBoroughMid/CourtBoroughMid_0100490169_w680.jpg  720w
+                      "
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="card-content">
+                  <div class="genre">HOMMES</div>
+                  <div class="produit-info">
+                    <div class="title">COURT BOROUGH MID</div>
+                    <div class="subtitle">4 couleurs</div>
+                  </div>
+                  <div class="produit-prix">$79,99</div>
+                </div>
+                <button class="panier"><span>Ajouter au panier</span></button>
+              </li>
+
+              <li class="card">
+                <a href="" class="card-produit">
+                  <div class="image-produit">
+                    <img
+                      src="images/Chaussures/women/ClassicCortezNylonB/ClassicCortezNylonB_010101_w1124.jpg"
+                      srcset="
+                        images/Chaussures/women/ClassicCortezNylonB/ClassicCortezNylonB_010101_w235.jpg 1000w,
+                        images/Chaussures/women/ClassicCortezNylonB/ClassicCortezNylonB_010101_w340.jpg  400w,
+                        images/Chaussures/women/ClassicCortezNylonB/ClassicCortezNylonB_010101_w470.jpg 1200w,
+                        images/Chaussures/women/ClassicCortezNylonB/ClassicCortezNylonB_010101_w680.jpg  720w
+                      "
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="card-content">
+                  <div class="genre">FEMMES</div>
+                  <div class="produit-info">
+                    <div class="title">CLASSIC CORTEZ NYLON B</div>
+                    <div class="subtitle">2 couleurs</div>
+                  </div>
+                  <div class="produit-prix">$89,99</div>
+                </div>
+                <button class="panier"><span>Ajouter au panier</span></button>
+              </li>
+
+              <li class="card">
+                <p><span>Nouveau</span></p>
+                <a href="" class="card-produit">
+                  <div class="image-produit">
+                    <img
+                      src="images/Chaussures/men/AirMaxUltraMoire/AirMaxUltraMoire_0100250145_w1124.jpg"
+                      srcset="
+                        images/Chaussures/men/AirMaxUltraMoire/AirMaxUltraMoire_0100250145_w235.jpg 1000w,
+                        images/Chaussures/men/AirMaxUltraMoire/AirMaxUltraMoire_0100250145_w340.jpg  400w,
+                        images/Chaussures/men/AirMaxUltraMoire/AirMaxUltraMoire_0100250145_w470.jpg 1200w,
+                        images/Chaussures/men/AirMaxUltraMoire/AirMaxUltraMoire_0100250145_w680.jpg  720w
+                      "
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="card-content">
+                  <div class="genre">HOMMES</div>
+                  <div class="produit-info">
+                    <div class="title">AIR MAX ULTRA MOIRE</div>
+                    <div class="subtitle">43 couleurs</div>
+                  </div>
+                  <div class="produit-prix">$149,99</div>
+                </div>
+                <button class="panier"><span>Ajouter au panier</span></button>
+              </li>
+
+              <li class="card">
+                <a href="" class="card-produit">
+                  <div class="image-produit">
+                    <img
+                      src="images/Chaussures/women/AirMaxZero/AirMaxZero_010081_w1124.jpg"
+                      srcset="
+                        images/Chaussures/women/AirMaxZero/AirMaxZero_010081_w235.jpg 1000w,
+                        images/Chaussures/women/AirMaxZero/AirMaxZero_010081_w340.jpg  400w,
+                        images/Chaussures/women/AirMaxZero/AirMaxZero_010081_w470.jpg 1200w,
+                        images/Chaussures/women/AirMaxZero/AirMaxZero_010081_w680.jpg  720w
+                      "
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="card-content">
+                  <div class="genre">FEMMES</div>
+                  <div class="produit-info">
+                    <div class="title">AIR MAX ZERO</div>
+                    <div class="subtitle">6 couleurs</div>
+                  </div>
+                  <div class="produit-prix">$119,99</div>
+                </div>
+                <button class="panier"><span>Ajouter au panier</span></button>
+              </li>
+
+              <li class="card">
+                <a href="" class="card-produit">
+                  <div class="image-produit">
+                    <img
+                      src="images/Chaussures/women/BlazerLowLX/BlazerLowLX_010089_w1124.jpg"
+                      srcset="
+                        images/Chaussures/women/BlazerLowLX/BlazerLowLX_010089_w235.jpg 1000w,
+                        images/Chaussures/women/BlazerLowLX/BlazerLowLX_010089_w340.jpg  400w,
+                        images/Chaussures/women/BlazerLowLX/BlazerLowLX_010089_w470.jpg 1200w,
+                        images/Chaussures/women/BlazerLowLX/BlazerLowLX_010089_w680.jpg  720w
+                      "
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="card-content">
+                  <div class="genre">FEMMES</div>
+                  <div class="produit-info">
+                    <div class="title">BLAZER LOW LX</div>
+                    <div class="subtitle">3 couleurs</div>
+                  </div>
+                  <div class="produit-prix">$109,99</div>
+                </div>
+                <button class="panier"><span>Ajouter au panier</span></button>
+              </li>
+
+              <li class="card">
+                <a href="" class="card-produit">
+                  <div class="image-produit">
+                    <img
+                      src="images/Chaussures/men/CortezUltraMoire/CortezUltraMoire_0100410161_w1124.jpg"
+                      srcset="
+                        images/Chaussures/men/CortezUltraMoire/CortezUltraMoire_0100410161_w235.jpg 1000w,
+                        images/Chaussures/men/CortezUltraMoire/CortezUltraMoire_0100410161_w340.jpg  400w,
+                        images/Chaussures/men/CortezUltraMoire/CortezUltraMoire_0100410161_w470.jpg 1200w,
+                        images/Chaussures/men/CortezUltraMoire/CortezUltraMoire_0100410161_w680.jpg  720w
+                      "
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="card-content">
+                  <div class="genre">HOMMES</div>
+                  <div class="produit-info">
+                    <div class="title">CORTEZ ULTRA MOIRE</div>
+                    <div class="subtitle">5 couleurs</div>
+                  </div>
+                  <div class="produit-prix">$99,99</div>
+                </div>
+                <button class="panier"><span>Ajouter au panier</span></button>
+              </li>
+
+              <li class="card">
+                <a href="" class="card-produit">
+                  <div class="image-produit">
+                    <img
+                      src="images/Chaussures/women/FlexSupremeTR5b/FlexSupremeTR5b_010109_w1124.jpg"
+                      srcset="
+                        images/Chaussures/women/FlexSupremeTR5b/FlexSupremeTR5b_010109_w235.jpg 1000w,
+                        images/Chaussures/women/FlexSupremeTR5b/FlexSupremeTR5b_010109_w340.jpg  400w,
+                        images/Chaussures/women/FlexSupremeTR5b/FlexSupremeTR5b_010109_w470.jpg 1200w,
+                        images/Chaussures/women/FlexSupremeTR5b/FlexSupremeTR5b_010109_w680.jpg  720w
+                      "
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="card-content">
+                  <div class="genre">FEMMES</div>
+                  <div class="produit-info">
+                    <div class="title">FLEX SUPREME TR 5B</div>
+                    <div class="subtitle">3 couleurs</div>
+                  </div>
+                  <div class="produit-prix">$89,99</div>
+                </div>
+                <button class="panier"><span>Ajouter au panier</span></button>
+              </li>
+
+              <li class="card">
+                <p><span>Nouveau</span></p>
+                <a href="" class="card-produit">
+                  <div class="image-produit">
+                    <img
+                      src="images/Chaussures/women/LunarChargeEssential/LunarChargeEssential_010117_w1124.jpg"
+                      srcset="
+                        images/Chaussures/women/LunarChargeEssential/LunarChargeEssential_010117_w235.jpg 1000w,
+                        images/Chaussures/women/LunarChargeEssential/LunarChargeEssential_010117_w340.jpg  400w,
+                        images/Chaussures/women/LunarChargeEssential/LunarChargeEssential_010117_w470.jpg 1200w,
+                        images/Chaussures/women/LunarChargeEssential/LunarChargeEssential_010117_w680.jpg  720w
+                      "
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <div class="card-content">
+                  <div class="genre">FEMMES</div>
+                  <div class="produit-info">
+                    <div class="title">LUNAR CHARGE ESSENTIAL</div>
+                    <div class="subtitle">4 couleurs</div>
+                  </div>
+                  <div class="produit-prix">$119,99</div>
+                </div>
+                <button class="panier"><span>Ajouter au panier</span></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="pagination">
+          <!--quand on clique sur un des chiffres liés aux pages la page va se recharger et aller sur la page choisie-->
+          <!--ajouter des liens à la pagination-->
+          <ul>
+            <li class="item-pagination">
+              <span>
+                <a href="index.html"></a>
+              </span>
+            </li>
+            <li class="item-pagination">
+              <span
+                >1
+                <a href="page.html"></a>
+              </span>
+            </li>
+            <li class="item-pagination">
+              <span
+                >2
+                <a href="page.html"></a>
+              </span>
+            </li>
+            <li class="item-pagination">
+              <span
+                >3
+                <a href="page.html"></a>
+              </span>
+            </li>
+            <li class="item-pagination">
+              <span>
+                <a href="index.html"></a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-logo-blocs">
+          <div class="footer-logo">
+            <span>FOULÉE</span>
+          </div>
+          <div class="logo-blocs">
+            <p class="bloc">2017 FOULEE</p>
+            <p class="bloc">Tous droits réservés 2017</p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <!--ajouter des liens aux li-->
+            <li>
+              Accueil
+              <a href="index.html"></a>
+            </li>
+            <li>
+              À Propos
+              <a href="apropos.html"></a>
+            </li>
+            <li>
+              Support
+              <a href="support.html"></a>
+            </li>
+            <li>
+              Contact
+              <a href="contact.html"></a>
+            </li>
+          </ul>
+        </nav>
+        <p class="copyright">
+          FOULÉE est une boutique spécialisée dans la vente de chaussures de
+          sport et de lifestyle. Nous offrons une sélection soigneusement
+          choisie pour hommes, femmes et enfants.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
