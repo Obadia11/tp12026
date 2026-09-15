@@ -12,6 +12,9 @@
 
 /* Dossier : css/base/ */
 @import url("css/base/normalize.css") layer(base);
+
+/* Dossier : css/style/ */
+@import url("css/style/header.css") layer(header);
 /* @import url("css/base/typography.css") layer(base); */
 
 /* Dossier : css/layout/ */
