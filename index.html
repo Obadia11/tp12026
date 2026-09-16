@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="js/menu.js" defer></script>
     <title>Page Catalogue</title>
   </head>
 
@@ -21,31 +26,35 @@
           <li><a href="">Personnaliser</a></li>
           <li><a href="">Foulée+</a></li>
         </ul>
-        <form>
-          <label class="sr-only" for="recherche">Rechercher</label>
-          <input
-            type="text"
-            id="recherche"
-            name="recherche"
-            placeholder="rechercher"
-          />
-          <input type="submit" aria-label="rechercher" value="" />
-        </form>
+
         <!--Faire un formulaire form(c'est un formulaire)-->
       </nav>
+      <form>
+        <div class="input-icons">
+          <i class="fa fa-search icon"></i>
+        </div>
+        <label class="sr-only" for="recherche">Rechercher</label>
+        <input
+          type="text"
+          id="recherche"
+          name="recherche"
+          placeholder="rechercher"
+        />
+        <input type="submit" aria-label="rechercher" value="" />
+      </form>
     </header>
 
     <main>
       <section class="header">
         <div class="wrapper">
           <nav>
-            <ol>
-              <li class="itemslist">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-items">
                 <a href="" class="class">
                   <span class="name">Accueil</span>
                 </a>
               </li>
-              <li class="itemslist">
+              <li class="breadcrumb-items">
                 <a href="" class="class">
                   &gt;
                   <span class="name">Chaussures</span>
@@ -72,17 +81,7 @@
                   ENFANTS
                 </button>
               </form>
-              <!--button(submit) name="categorie" value="tous" (mais c'est encore un formulaire form)-->
             </li>
-            <!--<li>
-              <button class="class"><span>HOMMES</span></button>
-            </li>-->
-            <!--<li>
-              <button class="class"><span>FEMMES</span></button>
-            </li>-->
-            <!--<li>
-              <button class="class"><span>ENFANTS</span></button>
-            </li>-->
           </ul>
           <div class="filter">
             <nav class="filter">
