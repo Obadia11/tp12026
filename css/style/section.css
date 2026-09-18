@@ -1,0 +1,48 @@
+.breadcrumb {
+  display: flex;
+}
+.breadcrumb-items a {
+  color: #676e7e;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  text-decoration: none;
+}
+ol {
+  list-style: none;
+}
+.name {
+  padding: 0.5em;
+}
+h1.heading-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 53px;
+  color: #101727;
+}
+p.paragraphclosed {
+  overflow: hidden;
+  font-family: "Barlow", sans-serif;
+  font-size: 12px;
+  color: #676e7e;
+}
+ul {
+  list-style: none;
+}
+button[type="submit"] {
+  border: #000000 solid;
+  background-color: white;
+  color: #000000;
+  font-family: "Barlow", sans-serif;
+  font-size: 12px;
+  padding: 10px 10px;
+  text-transform: uppercase;
+}
+button[type="submit"]:hover {
+  background-color: #000000;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

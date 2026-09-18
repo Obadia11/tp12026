@@ -3,20 +3,30 @@
     display: none;
   }
 }
-ul {
+.nav-css ul {
   list-style: none;
   list-style-type: none;
 }
 li {
   display: list-item;
 }
-a {
+.nav-css a {
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
   color: white;
   font-size: 13px;
-  font-family: "Barlow Condensed", "Barlow", sans-serif;
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+}
+.logo a {
+  color: white;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
 }
 .header-catalogue {
   background-color: black;

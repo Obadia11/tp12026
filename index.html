@@ -50,9 +50,7 @@
           <nav>
             <ol class="breadcrumb">
               <li class="breadcrumb-items">
-                <a href="" class="class">
-                  <span class="name">Accueil</span>
-                </a>
+                <a href="" class="class"><span class="name">Accueil</span></a>
               </li>
               <li class="breadcrumb-items">
                 <a href="" class="class">
@@ -62,8 +60,8 @@
               </li>
             </ol>
           </nav>
-          <h1>CHAUSSURES</h1>
-          <p>12 produits</p>
+          <h1 class="heading-title">CHAUSSURES</h1>
+          <p class="paragraphclosed">12 produits</p>
           <ul>
             <li>
               <!--button class="class"><span>TOUS</span></!--button-->
@@ -85,7 +83,14 @@
           </ul>
           <div class="filter">
             <nav class="filter">
-              <button><span>Masquer les filtres</span></button>
+              <button
+                type="button"
+                id="btn-toggle-form"
+                aria-controls="filter-form"
+                aria-expanded="true"
+              >
+                Masquer les filtres
+              </button>
             </nav>
           </div>
           <div>
@@ -111,246 +116,250 @@
             <nav class="aside-filter">
               <div class="filters">
                 <div class="filter-sport">
-                  <form>
-                    <p>Sport</p>
-                    <ul>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="course"
-                          name="sport"
-                          value="course"
-                        />
-                        <label for="course">Course</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="basketball"
-                          name="sport"
-                          value="basketball"
-                        />
-                        <label for="basketball">Basketball</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="football"
-                          name="sport"
-                          value="football"
-                        />
-                        <label for="football">Football</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="training"
-                          name="sport"
-                          value="training"
-                        />
-                        <label for="training">Training</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="lifestyle"
-                          name="sport"
-                          value="lifestyle"
-                        />
-                        <label for="lifestyle">Lifestyle</label>
-                      </li>
-                    </ul>
+                  <form id="filter-form">
+                    <fieldset>
+                      <legend>Sport</legend>
+                      <ul class="filter-list">
+                        <li class="section-title">Sports</li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="course"
+                            name="sport"
+                            value="course"
+                          />
+                          <label for="course">Course</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="basketball"
+                            name="sport"
+                            value="basketball"
+                          />
+                          <label for="basketball">Basketball</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="football"
+                            name="sport"
+                            value="football"
+                          />
+                          <label for="football">Football</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="training"
+                            name="sport"
+                            value="training"
+                          />
+                          <label for="training">Training</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="lifestyle"
+                            name="sport"
+                            value="lifestyle"
+                          />
+                          <label for="lifestyle">Lifestyle</label>
+                        </li>
+                      </ul>
 
-                    <p>Prix</p>
-                    <ul>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="moinsde80$"
-                          name="prix"
-                          value="moinsde80$"
-                        />
-                        <label for="moinsde80$">Moins de 80$</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="80$-120$"
-                          name="prix"
-                          value="80$-120$"
-                        />
-                        <label for="80$-120$">80$-120$</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="120$-180$"
-                          name="prix"
-                          value="120$-180$"
-                        />
-                        <label for="120$-180$">120$-180$</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="plusde180$"
-                          name="prix"
-                          value="plusde180$"
-                        />
-                        <label for="plusde180$">Plus de 180$</label>
-                      </li>
-                    </ul>
-                    <p>Couleur</p>
-                    <ul>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="blanc"
-                          name="couleur"
-                          value="blanc"
-                        />
-                        <label for="blanc">Blanc</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="noir"
-                          name="couleur"
-                          value="noir"
-                        />
-                        <label for="noir">Noir</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="rouge"
-                          name="couleur"
-                          value="rouge"
-                        />
-                        <label for="rouge">Rouge</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="bleu"
-                          name="couleur"
-                          value="bleu"
-                        />
-                        <label for="bleu">Bleu</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="jaune"
-                          name="couleur"
-                          value="jaune"
-                        />
-                        <label for="jaune">Jaune</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="gris"
-                          name="couleur"
-                          value="gris"
-                        />
-                        <label for="gris">Gris</label>
-                      </li>
-                    </ul>
+                      <ul class="filter-list">
+                        <li class="section-title">Prix</li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="moinsde80$"
+                            name="prix"
+                            value="moinsde80$"
+                          />
+                          <label for="moinsde80$">Moins de 80$</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="80$-120$"
+                            name="prix"
+                            value="80$-120$"
+                          />
+                          <label for="80$-120$">80$-120$</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="120$-180$"
+                            name="prix"
+                            value="120$-180$"
+                          />
+                          <label for="120$-180$">120$-180$</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="plusde180$"
+                            name="prix"
+                            value="plusde180$"
+                          />
+                          <label for="plusde180$">Plus de 180$</label>
+                        </li>
+                      </ul>
 
-                    <p>Pointure</p>
-                    <ul>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="36"
-                          name="pointure"
-                          value="36"
-                        />
-                        <label for="36">36</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="37"
-                          name="pointure"
-                          value="37"
-                        />
-                        <label for="37">37</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="38"
-                          name="pointure"
-                          value="38"
-                        />
-                        <label for="38">38</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="39"
-                          name="pointure"
-                          value="39"
-                        />
-                        <label for="39">39</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="40"
-                          name="pointure"
-                          value="40"
-                        />
-                        <label for="40">40</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="41"
-                          name="pointure"
-                          value="41"
-                        />
-                        <label for="41">41</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="42"
-                          name="pointure"
-                          value="42"
-                        />
-                        <label for="42">42</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="43"
-                          name="pointure"
-                          value="43"
-                        />
-                        <label for="43">43</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="44"
-                          name="pointure"
-                          value="44"
-                        />
-                        <label for="44">44</label>
-                      </li>
-                      <li>
-                        <input
-                          type="checkbox"
-                          id="45"
-                          name="pointure"
-                          value="45"
-                        />
-                        <label for="45">45</label>
-                      </li>
-                    </ul>
+                      <ul class="filter-list">
+                        <li class="section-title">Couleurs</li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="blanc"
+                            name="couleur"
+                            value="blanc"
+                          />
+                          <label for="blanc">Blanc</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="noir"
+                            name="couleur"
+                            value="noir"
+                          />
+                          <label for="noir">Noir</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="rouge"
+                            name="couleur"
+                            value="rouge"
+                          />
+                          <label for="rouge">Rouge</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="bleu"
+                            name="couleur"
+                            value="bleu"
+                          />
+                          <label for="bleu">Bleu</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="jaune"
+                            name="couleur"
+                            value="jaune"
+                          />
+                          <label for="jaune">Jaune</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="gris"
+                            name="couleur"
+                            value="gris"
+                          />
+                          <label for="gris">Gris</label>
+                        </li>
+                      </ul>
+
+                      <ul class="filter-list">
+                        <li class="section-title">Pointures</li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="36"
+                            name="pointure"
+                            value="36"
+                          />
+                          <label for="36">36</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="37"
+                            name="pointure"
+                            value="37"
+                          />
+                          <label for="37">37</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="38"
+                            name="pointure"
+                            value="38"
+                          />
+                          <label for="38">38</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="39"
+                            name="pointure"
+                            value="39"
+                          />
+                          <label for="39">39</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="40"
+                            name="pointure"
+                            value="40"
+                          />
+                          <label for="40">40</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="41"
+                            name="pointure"
+                            value="41"
+                          />
+                          <label for="41">41</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="42"
+                            name="pointure"
+                            value="42"
+                          />
+                          <label for="42">42</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="43"
+                            name="pointure"
+                            value="43"
+                          />
+                          <label for="43">43</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="44"
+                            name="pointure"
+                            value="44"
+                          />
+                          <label for="44">44</label>
+                        </li>
+                        <li class="list-option">
+                          <input
+                            type="checkbox"
+                            id="45"
+                            name="pointure"
+                            value="45"
+                          />
+                          <label for="45">45</label>
+                        </li>
+                      </ul>
+                    </fieldset>
                   </form>
                   <!--ul li sports ul li ul li(en gros la même chose se répète)-->
                 </div>
@@ -358,6 +367,58 @@
             </nav>
           </div>
         </div>
+        <script>
+          //1. Sélection des éléments HTML par leur identifiant
+          var toggleBtn = document.getElementById("btn-toggle-form");
+          var filterForm = document.getElementById("filter-form");
+
+          //2. Écoute du clic sur le bouton avec une fonction classique
+          toggleBtn.addEventListener("click", function () {
+            //3. on récupère la valeur actuelle de l'attribut (qui est une chaîne de caractères)
+            var currentAttribute = toggleBtn.getAttribute("aria-expanded");
+
+            //4. Structure conditionnelle standard (Pas de ternaire)
+            if (currentAttribute === "true") {
+              // Si le formulaire était affiché, on le cache
+              toggleBtn.setAttribute("aria-expanded", "false");
+              toggleBtn.textContent = "Afficher les filtres";
+              filterForm.classList.add("is-hidden");
+            } else {
+              // Si le formulaire était caché, on l'affiche
+              toggleBtn.setAttribute("aria-expanded", "true");
+              toggleBtn.textContent = "Masquer les filtres";
+              filterForm.classList.remove("is-hidden");
+            }
+          });
+        </script>
+        <style>
+          /* Masquage accessible du formulaire entier */
+          .is-hidden {
+            display: none;
+          }
+
+          /* Style des deux listes */
+          .filter-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+          }
+          .filter-list li {
+            margin: 8px 0;
+          }
+          .section-title {
+            font-weight: bold;
+            font-size: 1.1em;
+          }
+          .list-option {
+            padding-left: 15px;
+          }
+          button {
+            padding: 6px 12px;
+            cursor: pointer;
+            margin-bottom: 12px;
+          }
+        </style>
 
         <div class="grid-chaussures">
           <div class="produit-chaussure">
