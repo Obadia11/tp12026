@@ -81,31 +81,33 @@
               </form>
             </li>
           </ul>
-          <div class="filter">
-            <nav class="filter">
-              <button
-                type="button"
-                id="btn-toggle-form"
-                aria-controls="filter-form"
-                aria-expanded="true"
-              >
-                Masquer les filtres
-              </button>
-            </nav>
-          </div>
-          <div>
-            <form>
-              <label for="nouveautes">Trier par&nbsp;:</label>
+          <div class="filter-pagination">
+            <div class="filter">
+              <nav class="filter">
+                <button
+                  type="button"
+                  id="btn-toggle-form"
+                  aria-controls="filter-form"
+                  aria-expanded="true"
+                >
+                  Masquer les filtres
+                </button>
+              </nav>
+            </div>
+            <div>
+              <form>
+                <label for="nouveautes">Trier par&nbsp;:</label>
 
-              <select name="nouveautes" id="nouveautes">
-                <option value="">Nouveautés</option>
-                <option value="prix">Prix</option>
-                <option value="az">A-Z</option>
-                <option value="populaire">Populaire</option>
-              </select>
-            </form>
+                <select name="nouveautes" id="nouveautes">
+                  <option value="">Nouveautés</option>
+                  <option value="prix">Prix</option>
+                  <option value="az">A-Z</option>
+                  <option value="populaire">Populaire</option>
+                </select>
+              </form>
 
-            <!--Faire un formulaire form(c'est un formulaire)-->
+              <!--Faire un formulaire form(c'est un formulaire)-->
+            </div>
           </div>
         </div>
       </section>
@@ -118,7 +120,6 @@
                 <div class="filter-sport">
                   <form id="filter-form">
                     <fieldset>
-                      <legend>Sport</legend>
                       <ul class="filter-list">
                         <li class="section-title">Sports</li>
                         <li class="list-option">

@@ -16,6 +16,7 @@
 /* Dossier : css/style/ */
 @import url("css/style/header.css") layer(header);
 @import url("css/style/section.css") layer(section);
+@import url("css/style/chaussures.css") layer(chaussures);
 /* @import url("css/base/typography.css") layer(base); */
 
 /* Dossier : css/layout/ */

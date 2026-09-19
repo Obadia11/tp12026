@@ -1,0 +1,17 @@
+.chaussures {
+  display: flex;
+}
+.wrapper-aside {
+  width: 260px;
+  height: 913px;
+  position: sticky;
+  margin-left: 0;
+}
+.grid-chaussures {
+  max-width: 1920px;
+  padding: 0 48px;
+  position: relative;
+}
+.produit-chaussure {
+  text-align: left;
+}

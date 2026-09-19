@@ -46,3 +46,9 @@ button[type="submit"]:hover {
   font-weight: bold;
   text-transform: uppercase;
 }
+.filter-pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
