@@ -19,12 +19,14 @@ h1.heading-title {
   font-style: normal;
   font-size: 53px;
   color: #101727;
+  margin: 0.67em;
 }
 p.paragraphclosed {
   overflow: hidden;
   font-family: "Barlow", sans-serif;
   font-size: 12px;
   color: #676e7e;
+  margin: 4em;
 }
 ul {
   list-style: none;

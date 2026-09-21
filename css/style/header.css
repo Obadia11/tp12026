@@ -27,6 +27,7 @@ li {
   font-weight: 800;
   font-style: normal;
   text-decoration: none;
+  margin: 2em;
 }
 .header-catalogue {
   background-color: black;
