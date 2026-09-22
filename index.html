@@ -29,19 +29,70 @@
 
         <!--Faire un formulaire form(c'est un formulaire)-->
       </nav>
-      <form>
-        <div class="input-icons">
-          <i class="fa fa-search icon"></i>
-        </div>
+      <form role="search" action="index.html" class="search-form">
         <label class="sr-only" for="recherche">Rechercher</label>
         <input
-          type="text"
+          type="search"
           id="recherche"
           name="recherche"
           placeholder="rechercher"
+          autocomplete="off"
         />
-        <input type="submit" aria-label="rechercher" value="" />
+        <button type="submit">
+          <svg
+            aria-hidden="true"
+            xmlns="http://w3.org"
+            viewbox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span class="sr-only">Rechercher</span>
+        </button>
       </form>
+
+      <style>
+        .search-form {
+          display: flex;
+          max-width: 400px;
+          margin: 0;
+        }
+        #recherche {
+          flex: 1;
+          padding: 10px;
+          font-size: 1rem;
+          border: 2px solid #ccc;
+          border-right: none;
+          border-radius: 4px 0 0 4px;
+        }
+
+        #recherche:focus,
+        header button[type="submit"]:focus-visible {
+          outline: 3px solid #0056b3;
+          outline-offset: -1px;
+        }
+        header button[type="submit"] {
+          padding: 10px 20px;
+          font-size: 1rem;
+          background-color: #0056b3;
+          color: white;
+          border: 2px solid #0056b3;
+          border-radius: 0 4px 4px 0;
+          cursor: pointer;
+          font-weight: bold;
+        }
+        header button[type="submit"]:hover {
+          background-color: #0056b3;
+          border-color: #0056b3;
+        }
+      </style>
     </header>
 
     <main>
@@ -782,44 +833,43 @@
       </div>
     </main>
 
-    <footer>
-      <div class="footer">
-        <div class="footer-logo-blocs">
-          <div class="footer-logo">
-            <span>FOULÉE</span>
-          </div>
-          <div class="logo-blocs">
-            <p class="bloc">2017 FOULEE</p>
-            <p class="bloc">Tous droits réservés 2017</p>
-          </div>
+    <footer class="footer">
+      <div class="footer-logo-blocs">
+        <div class="footer-logo">
+          <span>FOULÉE</span>
         </div>
-        <nav>
-          <ul>
-            <!--ajouter des liens aux li-->
-            <li>
-              Accueil
-              <a href="index.html"></a>
-            </li>
-            <li>
-              À Propos
-              <a href="apropos.html"></a>
-            </li>
-            <li>
-              Support
-              <a href="support.html"></a>
-            </li>
-            <li>
-              Contact
-              <a href="contact.html"></a>
-            </li>
-          </ul>
-        </nav>
-        <p class="copyright">
-          FOULÉE est une boutique spécialisée dans la vente de chaussures de
-          sport et de lifestyle. Nous offrons une sélection soigneusement
-          choisie pour hommes, femmes et enfants.
-        </p>
+        <div class="logo-blocs">
+          <p class="bloc">©2017 FOULEE.</p>
+          <p class="bloc">Tous droits réservés 2017</p>
+        </div>
       </div>
+      <nav class="footer-blocs-links">
+        <ul>
+          <!--ajouter des liens aux li-->
+          <li>
+            Accueil
+            <a href="index.html"></a>
+          </li>
+          <li>
+            À Propos
+            <a href="apropos.html"></a>
+          </li>
+          <li>
+            Support
+            <a href="support.html"></a>
+          </li>
+          <li>
+            Contact
+            <a href="contact.html"></a>
+          </li>
+        </ul>
+      </nav>
+
+      <p class="copyright">
+        FOULÉE est une boutique spécialisée dans la vente de chaussures de sport
+        et de lifestyle. Nous offrons une sélection soigneusement choisie pour
+        hommes, femmes et enfants.
+      </p>
     </footer>
   </body>
 </html>

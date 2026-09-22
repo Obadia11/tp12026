@@ -3,6 +3,11 @@
     display: none;
   }
 }
+@media (max-width < 720px) {
+  header {
+    width: 100%;
+  }
+}
 .nav-css ul {
   list-style: none;
   list-style-type: none;

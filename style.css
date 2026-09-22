@@ -18,6 +18,7 @@
 @import url("css/style/section.css") layer(section);
 @import url("css/style/chaussures.css") layer(chaussures);
 @import url("css/style/pagination.css") layer(pagination);
+@import url("css/style/footer.css") layer(footer);
 /* @import url("css/base/typography.css") layer(base); */
 
 /* Dossier : css/layout/ */

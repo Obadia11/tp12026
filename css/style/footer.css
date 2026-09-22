@@ -1,0 +1,56 @@
+@media (max-width < 720px) {
+  .footer {
+    width: 100%;
+  }
+}
+.footer {
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 200px;
+}
+.footer-logo-blocs {
+  padding: 0;
+  margin-bottom: 0;
+  width: 600px;
+  margin: 0;
+}
+.footer-logo {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.footer-blocs-links {
+  cursor: pointer;
+  font-family: "Barlow", sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+}
+footer nav ul {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+p.bloc {
+  font-family: "Barlow", sans-serif;
+  font-size: 11px;
+  color: #676e7e;
+}
+footer p.copyright {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
